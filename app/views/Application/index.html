@@ -1,4 +1,10 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-#{welcome /}
+<div>
+	#{list items:farmacias, as:'farmacia'}
+            <h2 class="post-title">
+                <a href="#">${farmacia.titular}</a>
+            </h2>
+    #{/list}
+</div>

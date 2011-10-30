@@ -1,0 +1,10 @@
+
+.*
+!.gitignore
+
+db
+eclipse
+log
+logs
+tmp
+test-result
