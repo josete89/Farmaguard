@@ -44,5 +44,9 @@ public class Application extends Controller {
         System.out.print(farmacias);
         renderJSON(farmacias);
 	}
+
+    public static void test() {
+        render();
+    }
 	
 }

@@ -14,7 +14,7 @@ public class Horario extends Model {
     public Date fechaHoraInicio;
     public Date fechaHoraFin;
 
-    @ManyToMany(mappedBy="followedEvents")
+    @ManyToMany
     public Set<Farmacia> farmacias = new HashSet<Farmacia>();
 
 }

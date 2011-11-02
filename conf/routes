@@ -4,7 +4,6 @@
 
 # Home page
 GET     /                                       Application.index
-GET     /mapa                                   Application.map
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

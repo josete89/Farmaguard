@@ -1,10 +1,14 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
+#{set title:'Farmaguard' /}
+#{set 'moreScripts'}
+    #{script 'application.js'/}
+#{/set}
 
-<div>
-	#{list items:farmacias, as:'farmacia'}
-            <h2 class="post-title">
-                <a href="#">${farmacia.titular}</a>
-            </h2>
-    #{/list}
+
+<div class="cabecera">
+    <h1>#{get 'title' /} <small>Encuentra tu farmacia de guardia mas cercana</small></h1>
+    <div id="indicador">▲ Haz clic aqui arriba</div>
+</div>
+<div class="row">
+    <div id="map_canvas"></div>
 </div>
