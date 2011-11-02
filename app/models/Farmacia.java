@@ -1,19 +1,29 @@
 package models;
  
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 import play.db.jpa.Model;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 public class Farmacia extends Model {
+
 	public String titular;
 	public String direccion;
 	public String localidad;
 	public String telefono;
 	public String fax;
 	public String observaciones;
+    
+    public String latitude;
+    public String longitude;
 	
 	public String scrapeId;
+
+    @ManyToMany(mappedBy="farmacias")
+    public Set<Horario> horarios = new HashSet<Horario>();
 	
 	private Farmacia(Builder builder) {
 
