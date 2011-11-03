@@ -88,7 +88,25 @@ function initialize() {
         }
     }
 }
-
+function deteccion(){
+    if(navigator.platform == 'iPad'|| navigator.platform == 'Android' || navigator.platform == 'iPhone' || navigator.platform == 'iPod')
+    { 
+    	return false;
+    }else{
+    	window.alert('Estás entrando desde un '+navigator.platform);
+    	return true;
+    }
+    
+}
+function close_input(){
+	 document.getElementById("input_localizacion").style.display=('none');
+	
+}
 $("body").ready(function() {
-    initialize();
+	initialize();
+	//Detectamos 
+	 if (deteccion() == true){ 
+		 document.getElementById("input_localizacion").style.display=('block');
+		// document.getElementById("map_canvas").style.width=('80%');
+		}
 });

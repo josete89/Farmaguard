@@ -13,7 +13,38 @@ body {
 	width: 100%;
 	height: 100%;
 }
-
+#input_localizacion{
+	
+	width: 20%;
+	height: 55px;
+	float: right;
+	display: none;
+	padding:5px;
+	z-index: 5000;
+	margin-top: 75px;
+	background-color: white;
+	border:1px black solid;
+	border-radius: 15px;
+	position: absolute;
+	right: 10px;
+	top: 54px;
+	}
+#close_input{
+	 background:url(../images/close.png) no-repeat;
+	 width:30px;
+	 height:30px;
+	 float:left;
+	}
+#busca_por_calle{
+	 background:url(../images/farmacia.png) no-repeat;
+	 width:30px;
+	 height:30px;
+	 float:right;
+	}
+#calle_buscar{
+	width: 208px;
+	height: 24px;
+	}
 .cabecera {
     background-color: #222;
     text-align: center;

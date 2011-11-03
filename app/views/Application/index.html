@@ -6,9 +6,16 @@
 
 
 <div class="cabecera">
-    <h1>#{get 'title' /} <small>Encuentra tu CAGARRUTAfarmacia de guardia mas cercana</small></h1>
+    <h1>#{get 'title' /} <small>Encuentra tu farmacia de guardia mas cercana</small></h1>
     <div id="indicador">▲ Haz clic aqui arriba</div>
 </div>
 <div class="row">
     <div id="map_canvas"></div>
+    <div id="input_localizacion">
+    	<div id="close_input" onclick="close_input()"></div>
+    	Si hemos fallado, ponga su calle
+    	<br>
+    	<input type="text" name="calle" ></input>
+    	<div id="busca_por_calle" onclick="busca_por_calle()"></div>
+    </div>
 </div>
