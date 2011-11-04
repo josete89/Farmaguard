@@ -3,7 +3,12 @@ package controllers;
 import java.io.IOException;
 import java.util.List;
 
+import Util.Utils;
+
+
+
 import models.Farmacia;
+import play.Logger;
 import play.mvc.Controller;
 import scrapers.Aragon;
 
@@ -16,6 +21,8 @@ public class Application extends Controller {
      */
     
 	public static void index() {
+		String ipRemote=Utils.getIpRemote(request);
+		Logger.info("ip--"+ipRemote);
         render();
     }
 
